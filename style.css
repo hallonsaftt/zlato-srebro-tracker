@@ -1,0 +1,100 @@
+body {
+
+    background-color: #181818;
+}
+.card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+
+
+/* zlato css */
+
+.zlato-kupi {
+    background-image: url('/zlato-kupi.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top right;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.zlato-kupi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 215, 0, 0.1) 0%, 
+        rgba(0, 0, 0, 0.4) 70%
+    );
+    pointer-events: none;
+}
+
+.zlato-kupi .card-title {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.zlato-kupi .card-text {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    margin-bottom: 16px;
+}
+
+/* srebro */
+
+.srebro-kupi {
+    background-image: url('/zlato-prodaj.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top right;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    position: relative;
+    border-radius: 16px; /* Isti kao card */
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.srebro-kupi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(192, 192, 192, 0.1) 0%, 
+        rgba(0, 0, 0, 0.4) 70%
+    );
+    pointer-events: none;
+}
+
+.srebro-kupi .card-title {
+    color: #C0C0C0;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.srebro-kupi .card-text {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
